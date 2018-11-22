@@ -8,6 +8,8 @@ target 'CSVDemo' do
   
   pod 'HandyJSON'
   pod 'Alamofire'
+  pod 'Kingfisher'
+  pod 'MJRefresh'
   
 end
 

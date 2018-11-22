@@ -7,8 +7,19 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		354A5BBE21A6A9E700A0F626 /* LueRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BBD21A6A9E700A0F626 /* LueRefreshBaseView.swift */; };
+		354A5BC021A6AB4900A0F626 /* LueRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */; };
+		354A5BC221A6AD3B00A0F626 /* LueRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */; };
 		354AC49021990E5700CBC255 /* evt_ex_codes.json in Resources */ = {isa = PBXBuildFile; fileRef = 354AC48F21990E5700CBC255 /* evt_ex_codes.json */; };
 		3553928521A3A12900737486 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928421A3A12900737486 /* TableViewController.swift */; };
+		3553928821A4EDD100737486 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928721A4EDD100737486 /* Extension.swift */; };
+		3553928B21A4EE0600737486 /* PhotoBrowerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928921A4EE0600737486 /* PhotoBrowerViewController.swift */; };
+		3553928C21A4EE0600737486 /* PhotoBrowerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3553928A21A4EE0600737486 /* PhotoBrowerViewController.xib */; };
+		3553928E21A4EE1100737486 /* LueProgressHUD.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928D21A4EE1100737486 /* LueProgressHUD.swift */; };
+		3553929021A4F13D00737486 /* LueQRCodeConstroller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928F21A4F13D00737486 /* LueQRCodeConstroller.swift */; };
+		3553929221A4F39F00737486 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553929121A4F39F00737486 /* QRGenerator.swift */; };
+		3553929421A4F5D500737486 /* LyeCustomGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553929321A4F5D500737486 /* LyeCustomGestureRecognizer.swift */; };
+		3553929621A4F67200737486 /* LyeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553929521A4F67200737486 /* LyeExtension.swift */; };
 		3578A82D218C380F0019FE3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578A82C218C380F0019FE3F /* AppDelegate.swift */; };
 		3578A82F218C380F0019FE3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578A82E218C380F0019FE3F /* ViewController.swift */; };
 		3578A832218C380F0019FE3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3578A830218C380F0019FE3F /* Main.storyboard */; };
@@ -22,8 +33,20 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		354A5BBD21A6A9E700A0F626 /* LueRefreshBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshBaseView.swift; sourceTree = "<group>"; };
+		354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshHeaderView.swift; sourceTree = "<group>"; };
+		354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshNormalHeader.swift; sourceTree = "<group>"; };
 		354AC48F21990E5700CBC255 /* evt_ex_codes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = evt_ex_codes.json; sourceTree = "<group>"; };
 		3553928421A3A12900737486 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		3553928721A4EDD100737486 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		3553928921A4EE0600737486 /* PhotoBrowerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoBrowerViewController.swift; sourceTree = "<group>"; };
+		3553928A21A4EE0600737486 /* PhotoBrowerViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PhotoBrowerViewController.xib; sourceTree = "<group>"; };
+		3553928D21A4EE1100737486 /* LueProgressHUD.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LueProgressHUD.swift; sourceTree = "<group>"; };
+		3553928F21A4F13D00737486 /* LueQRCodeConstroller.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LueQRCodeConstroller.swift; sourceTree = "<group>"; };
+		3553929121A4F39F00737486 /* QRGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QRGenerator.swift; sourceTree = "<group>"; };
+		3553929321A4F5D500737486 /* LyeCustomGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyeCustomGestureRecognizer.swift; sourceTree = "<group>"; };
+		3553929521A4F67200737486 /* LyeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyeExtension.swift; sourceTree = "<group>"; };
+		3553929721A5286F00737486 /* YSHClassifyCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSHClassifyCollectionViewLayout.swift; sourceTree = "<group>"; };
 		3578A829218C380F0019FE3F /* CSVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3578A82C218C380F0019FE3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3578A82E218C380F0019FE3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -60,6 +83,34 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		354A5BBC21A6A9AE00A0F626 /* Refresh */ = {
+			isa = PBXGroup;
+			children = (
+				354A5BBD21A6A9E700A0F626 /* LueRefreshBaseView.swift */,
+				354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */,
+				354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */,
+			);
+			path = Refresh;
+			sourceTree = "<group>";
+		};
+		3553928621A4ED9100737486 /* class */ = {
+			isa = PBXGroup;
+			children = (
+				354A5BBC21A6A9AE00A0F626 /* Refresh */,
+				3553929721A5286F00737486 /* YSHClassifyCollectionViewLayout.swift */,
+				3553929521A4F67200737486 /* LyeExtension.swift */,
+				3553929321A4F5D500737486 /* LyeCustomGestureRecognizer.swift */,
+				3553929121A4F39F00737486 /* QRGenerator.swift */,
+				3553928F21A4F13D00737486 /* LueQRCodeConstroller.swift */,
+				3553928D21A4EE1100737486 /* LueProgressHUD.swift */,
+				3553928921A4EE0600737486 /* PhotoBrowerViewController.swift */,
+				3553928A21A4EE0600737486 /* PhotoBrowerViewController.xib */,
+				3578A83E218C395C0019FE3F /* CSV.swift */,
+				3553928721A4EDD100737486 /* Extension.swift */,
+			);
+			path = class;
+			sourceTree = "<group>";
+		};
 		3578A820218C380F0019FE3F = {
 			isa = PBXGroup;
 			children = (
@@ -81,7 +132,7 @@
 		3578A82B218C380F0019FE3F /* CSVDemo */ = {
 			isa = PBXGroup;
 			children = (
-				3578A83E218C395C0019FE3F /* CSV.swift */,
+				3553928621A4ED9100737486 /* class */,
 				354AC48F21990E5700CBC255 /* evt_ex_codes.json */,
 				3578A841218C3A330019FE3F /* trans.cn.csv */,
 				3578A840218C3A330019FE3F /* trans.en.csv */,
@@ -168,6 +219,7 @@
 			files = (
 				3578A837218C38130019FE3F /* LaunchScreen.storyboard in Resources */,
 				3578A834218C38130019FE3F /* Assets.xcassets in Resources */,
+				3553928C21A4EE0600737486 /* PhotoBrowerViewController.xib in Resources */,
 				3578A832218C380F0019FE3F /* Main.storyboard in Resources */,
 				354AC49021990E5700CBC255 /* evt_ex_codes.json in Resources */,
 				3578A842218C3A330019FE3F /* trans.en.csv in Resources */,
@@ -211,6 +263,8 @@
 				"${PODS_ROOT}/Target Support Files/Pods-CSVDemo/Pods-CSVDemo-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
 				"${BUILT_PRODUCTS_DIR}/HandyJSON/HandyJSON.framework",
+				"${BUILT_PRODUCTS_DIR}/Kingfisher/Kingfisher.framework",
+				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
@@ -218,6 +272,8 @@
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/HandyJSON.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Kingfisher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -231,11 +287,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354A5BBE21A6A9E700A0F626 /* LueRefreshBaseView.swift in Sources */,
 				3578A82F218C380F0019FE3F /* ViewController.swift in Sources */,
+				354A5BC021A6AB4900A0F626 /* LueRefreshHeaderView.swift in Sources */,
 				3578A82D218C380F0019FE3F /* AppDelegate.swift in Sources */,
+				354A5BC221A6AD3B00A0F626 /* LueRefreshNormalHeader.swift in Sources */,
+				3553929221A4F39F00737486 /* QRGenerator.swift in Sources */,
 				3578A83F218C395C0019FE3F /* CSV.swift in Sources */,
+				3553929621A4F67200737486 /* LyeExtension.swift in Sources */,
+				3553928E21A4EE1100737486 /* LueProgressHUD.swift in Sources */,
+				3553928B21A4EE0600737486 /* PhotoBrowerViewController.swift in Sources */,
+				3553928821A4EDD100737486 /* Extension.swift in Sources */,
 				3553928521A3A12900737486 /* TableViewController.swift in Sources */,
+				3553929021A4F13D00737486 /* LueQRCodeConstroller.swift in Sources */,
 				358CBCF521A2762D00E2DE64 /* NetworkHandler.swift in Sources */,
+				3553929421A4F5D500737486 /* LyeCustomGestureRecognizer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -385,7 +451,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5SH7H4LUD;
 				INFOPLIST_FILE = CSVDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -405,7 +471,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = A5SH7H4LUD;
 				INFOPLIST_FILE = CSVDemo/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
