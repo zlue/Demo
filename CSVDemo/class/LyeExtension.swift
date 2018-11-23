@@ -40,6 +40,33 @@ func cancel(_ task: Task?) {
     task?(true)
 }
 
+extension UIColor {
+    convenience init(hex hexString : String, alpha: CGFloat = 1) {
+        var hex = hexString
+        
+        if hex.hasPrefix("#") {
+            hex = String(hex.dropFirst())
+        }
+        
+        while hex.count < 6 {
+            hex.append(hex)
+        }
+        
+        if hex.count > 6 {
+            hex = String(hex.prefix(6))
+        }
+        
+        let scanner = Scanner(string: hex)
+        var rgb: UInt32 = 0
+        scanner.scanHexInt32(&rgb)
+        
+        let r = rgb >> 16
+        let g = (rgb & 0x00FF00) >> 8
+        let b = rgb & 0x0000FF
+        
+        self.init(red: CGFloat(r)/256, green: CGFloat(g)/256, blue: CGFloat(b)/256, alpha: alpha)
+    }
+}
 
 extension String {
     // 是否全是数字
@@ -123,6 +150,14 @@ extension String {
         return false
     }
     
+    var trimmed: String {
+        return self.trimmingCharacters(in: CharacterSet.whitespacesAndNewlines)
+    }
+    
+    var compressWhitespaces: String {
+        return trimmed.components(separatedBy: CharacterSet.whitespacesAndNewlines).filter({$0 != ""}).joined(separator: " ")
+    }
+    
     func at(_ index: String.IndexDistance) -> String.Index {
         return self.index(self.startIndex, offsetBy: index)
     }
@@ -154,5 +189,17 @@ extension UIView {
             next = next?.superview
         }
         return nil
+    }
+    /// 部分圆角
+    ///
+    /// - Parameters:
+    ///   - corners: 需要实现为圆角的角，可传入多个
+    ///   - radii: 圆角半径
+    func corner(byRoundingCorners corners: UIRectCorner, radii: CGFloat) {
+        let maskPath = UIBezierPath(roundedRect: self.bounds, byRoundingCorners: corners, cornerRadii: CGSize(width: radii, height: radii))
+        let maskLayer = CAShapeLayer()
+        maskLayer.frame = self.bounds
+        maskLayer.path = maskPath.cgPath
+        self.layer.mask = maskLayer
     }
 }

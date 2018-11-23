@@ -10,6 +10,7 @@
 		354A5BBE21A6A9E700A0F626 /* LueRefreshBaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BBD21A6A9E700A0F626 /* LueRefreshBaseView.swift */; };
 		354A5BC021A6AB4900A0F626 /* LueRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */; };
 		354A5BC221A6AD3B00A0F626 /* LueRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */; };
+		354A5BEA21A7AA1200A0F626 /* ETBottomActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BE921A7AA1100A0F626 /* ETBottomActionController.swift */; };
 		354AC49021990E5700CBC255 /* evt_ex_codes.json in Resources */ = {isa = PBXBuildFile; fileRef = 354AC48F21990E5700CBC255 /* evt_ex_codes.json */; };
 		3553928521A3A12900737486 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928421A3A12900737486 /* TableViewController.swift */; };
 		3553928821A4EDD100737486 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928721A4EDD100737486 /* Extension.swift */; };
@@ -36,6 +37,7 @@
 		354A5BBD21A6A9E700A0F626 /* LueRefreshBaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshBaseView.swift; sourceTree = "<group>"; };
 		354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshHeaderView.swift; sourceTree = "<group>"; };
 		354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshNormalHeader.swift; sourceTree = "<group>"; };
+		354A5BE921A7AA1100A0F626 /* ETBottomActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETBottomActionController.swift; sourceTree = "<group>"; };
 		354AC48F21990E5700CBC255 /* evt_ex_codes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = evt_ex_codes.json; sourceTree = "<group>"; };
 		3553928421A3A12900737486 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3553928721A4EDD100737486 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 			children = (
 				354A5BBC21A6A9AE00A0F626 /* Refresh */,
 				3553929721A5286F00737486 /* YSHClassifyCollectionViewLayout.swift */,
+				354A5BE921A7AA1100A0F626 /* ETBottomActionController.swift */,
 				3553929521A4F67200737486 /* LyeExtension.swift */,
 				3553929321A4F5D500737486 /* LyeCustomGestureRecognizer.swift */,
 				3553929121A4F39F00737486 /* QRGenerator.swift */,
@@ -296,6 +299,7 @@
 				3578A83F218C395C0019FE3F /* CSV.swift in Sources */,
 				3553929621A4F67200737486 /* LyeExtension.swift in Sources */,
 				3553928E21A4EE1100737486 /* LueProgressHUD.swift in Sources */,
+				354A5BEA21A7AA1200A0F626 /* ETBottomActionController.swift in Sources */,
 				3553928B21A4EE0600737486 /* PhotoBrowerViewController.swift in Sources */,
 				3553928821A4EDD100737486 /* Extension.swift in Sources */,
 				3553928521A3A12900737486 /* TableViewController.swift in Sources */,
