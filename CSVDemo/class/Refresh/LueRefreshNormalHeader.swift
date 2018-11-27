@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LueRefreshNormalHeader: LueRefreshHeaderView {
+class LueRefreshNormalHeader: LueRefreshHeaderBaseView {
 
     lazy var label: UILabel = {
         let lab = UILabel()

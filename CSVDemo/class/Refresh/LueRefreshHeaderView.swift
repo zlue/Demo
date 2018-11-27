@@ -1,5 +1,5 @@
 //
-//  LueRefreshHeaderView.swift
+//  LueRefreshHeaderBaseView.swift
 //  CSVDemo
 //
 //  Created by lue on 2018/11/22.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class LueRefreshHeaderView: LueRefreshBaseView {
+class LueRefreshHeaderBaseView: LueRefreshBaseView {
 
     private var insertDelta: CGFloat = 0
     

@@ -11,6 +11,9 @@
 		354A5BC021A6AB4900A0F626 /* LueRefreshHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */; };
 		354A5BC221A6AD3B00A0F626 /* LueRefreshNormalHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */; };
 		354A5BEA21A7AA1200A0F626 /* ETBottomActionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5BE921A7AA1100A0F626 /* ETBottomActionController.swift */; };
+		354A5C2921ABA22700A0F626 /* LueRefreshFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5C2821ABA22700A0F626 /* LueRefreshFooterView.swift */; };
+		354A5C2B21ABBF9E00A0F626 /* LueRefreshNormalFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5C2A21ABBF9E00A0F626 /* LueRefreshNormalFooterView.swift */; };
+		354A5C2D21ABF58F00A0F626 /* LuePopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 354A5C2C21ABF58F00A0F626 /* LuePopView.swift */; };
 		354AC49021990E5700CBC255 /* evt_ex_codes.json in Resources */ = {isa = PBXBuildFile; fileRef = 354AC48F21990E5700CBC255 /* evt_ex_codes.json */; };
 		3553928521A3A12900737486 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928421A3A12900737486 /* TableViewController.swift */; };
 		3553928821A4EDD100737486 /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553928721A4EDD100737486 /* Extension.swift */; };
@@ -38,6 +41,9 @@
 		354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshHeaderView.swift; sourceTree = "<group>"; };
 		354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshNormalHeader.swift; sourceTree = "<group>"; };
 		354A5BE921A7AA1100A0F626 /* ETBottomActionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ETBottomActionController.swift; sourceTree = "<group>"; };
+		354A5C2821ABA22700A0F626 /* LueRefreshFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshFooterView.swift; sourceTree = "<group>"; };
+		354A5C2A21ABBF9E00A0F626 /* LueRefreshNormalFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LueRefreshNormalFooterView.swift; sourceTree = "<group>"; };
+		354A5C2C21ABF58F00A0F626 /* LuePopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LuePopView.swift; sourceTree = "<group>"; };
 		354AC48F21990E5700CBC255 /* evt_ex_codes.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = evt_ex_codes.json; sourceTree = "<group>"; };
 		3553928421A3A12900737486 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		3553928721A4EDD100737486 /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
@@ -91,6 +97,8 @@
 				354A5BBD21A6A9E700A0F626 /* LueRefreshBaseView.swift */,
 				354A5BBF21A6AB4900A0F626 /* LueRefreshHeaderView.swift */,
 				354A5BC121A6AD3B00A0F626 /* LueRefreshNormalHeader.swift */,
+				354A5C2821ABA22700A0F626 /* LueRefreshFooterView.swift */,
+				354A5C2A21ABBF9E00A0F626 /* LueRefreshNormalFooterView.swift */,
 			);
 			path = Refresh;
 			sourceTree = "<group>";
@@ -110,6 +118,7 @@
 				3553928A21A4EE0600737486 /* PhotoBrowerViewController.xib */,
 				3578A83E218C395C0019FE3F /* CSV.swift */,
 				3553928721A4EDD100737486 /* Extension.swift */,
+				354A5C2C21ABF58F00A0F626 /* LuePopView.swift */,
 			);
 			path = class;
 			sourceTree = "<group>";
@@ -290,9 +299,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				354A5C2B21ABBF9E00A0F626 /* LueRefreshNormalFooterView.swift in Sources */,
 				354A5BBE21A6A9E700A0F626 /* LueRefreshBaseView.swift in Sources */,
 				3578A82F218C380F0019FE3F /* ViewController.swift in Sources */,
 				354A5BC021A6AB4900A0F626 /* LueRefreshHeaderView.swift in Sources */,
+				354A5C2D21ABF58F00A0F626 /* LuePopView.swift in Sources */,
+				354A5C2921ABA22700A0F626 /* LueRefreshFooterView.swift in Sources */,
 				3578A82D218C380F0019FE3F /* AppDelegate.swift in Sources */,
 				354A5BC221A6AD3B00A0F626 /* LueRefreshNormalHeader.swift in Sources */,
 				3553929221A4F39F00737486 /* QRGenerator.swift in Sources */,

@@ -14,6 +14,7 @@ class LueRefreshBaseView: UIView {
         static let size = "contentSize"
         static let state = "state"
         static var header = "header"
+        static var footer = "footer"
     }
     enum RefreshState {
         case idle
@@ -25,6 +26,7 @@ class LueRefreshBaseView: UIView {
     
     private weak var _scrollView: UIScrollView?
     private var _state: RefreshState = .idle
+    private var panGesture: UIPanGestureRecognizer?
     
     var interval: TimeInterval = 0.25
     var scrollView: UIScrollView? {
@@ -41,11 +43,8 @@ class LueRefreshBaseView: UIView {
             }
         }
     }
-    var isRefreshing: Bool {
-        return _state == .willRefresh || _state == .refreshing
-    }
+   
     var originContentInset: UIEdgeInsets = .zero
-    var panGesture: UIPanGestureRecognizer?
     var pullingPercent: CGFloat = 0
     
     var refreshingBlock: (() -> Void)?
@@ -124,6 +123,9 @@ class LueRefreshBaseView: UIView {
     }
     func executeRefreshingCallBack() {
         DispatchQueue.main.async {
+            if self.scrollView?.header == self {
+                self.scrollView?.footer?.resetNoMoreData()
+            }
             self.refreshingBlock?()
         }
     }
@@ -148,15 +150,27 @@ class LueRefreshBaseView: UIView {
 }
 
 extension UIScrollView {
-    var header: LueRefreshBaseView? {
+    var header: LueRefreshHeaderBaseView? {
         get {
-            return objc_getAssociatedObject(self, &LueRefreshBaseView.LueRefreshKeys.header) as? LueRefreshBaseView
+            return objc_getAssociatedObject(self, &LueRefreshBaseView.LueRefreshKeys.header) as? LueRefreshHeaderBaseView
         }
         set {
             if let h = newValue {
                 if let old = header { old.removeFromSuperview() }
                 insertSubview(h, at: 0)
                 objc_setAssociatedObject(self, &LueRefreshBaseView.LueRefreshKeys.header, h, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
+            }
+        }
+    }
+    var footer: LueRefreshFooterBaseView? {
+        get {
+            return objc_getAssociatedObject(self, &LueRefreshBaseView.LueRefreshKeys.footer) as? LueRefreshFooterBaseView
+        }
+        set {
+            if let h = newValue {
+                if let old = footer { old.removeFromSuperview() }
+                insertSubview(h, at: 0)
+                objc_setAssociatedObject(self, &LueRefreshBaseView.LueRefreshKeys.footer, h, objc_AssociationPolicy.OBJC_ASSOCIATION_ASSIGN)
             }
         }
     }
@@ -206,6 +220,19 @@ extension UIScrollView {
             old.top = newValue
             if #available(iOS 11.0, *) {
                 old.top -= (adjustedContentInset.top - contentInset.top)
+            }
+            inset = old
+        }
+    }
+    var insetBottom: CGFloat {
+        get {
+            return inset.bottom
+        }
+        set {
+            var old = contentInset
+            old.bottom = newValue
+            if #available(iOS 11.0, *) {
+                old.bottom -= (adjustedContentInset.bottom - contentInset.bottom)
             }
             inset = old
         }

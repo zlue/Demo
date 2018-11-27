@@ -43,6 +43,12 @@ class ViewController: UIViewController {
 //        } catch {}
     }
 
+    @IBAction func buttonAction(_ sender: UIButton) {
+        LuePopView.show(size: CGSize(width: 100, height: 100), atView: sender, list: ["1", "2"], isShowArrow: false) { (text, index) in
+            
+        }
+    }
+    
     internal var didBeginLineIndex: UInt?
     internal var content = Array<[String]>()
     internal var currentFieldValues = Array<String>()
