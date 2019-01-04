@@ -24,6 +24,7 @@
 		3553929221A4F39F00737486 /* QRGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553929121A4F39F00737486 /* QRGenerator.swift */; };
 		3553929421A4F5D500737486 /* LyeCustomGestureRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553929321A4F5D500737486 /* LyeCustomGestureRecognizer.swift */; };
 		3553929621A4F67200737486 /* LyeExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3553929521A4F67200737486 /* LyeExtension.swift */; };
+		3578395521BE085300C8BF07 /* AMap_adcode_citycode.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3578395421BE085200C8BF07 /* AMap_adcode_citycode.csv */; };
 		3578A82D218C380F0019FE3F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578A82C218C380F0019FE3F /* AppDelegate.swift */; };
 		3578A82F218C380F0019FE3F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3578A82E218C380F0019FE3F /* ViewController.swift */; };
 		3578A832218C380F0019FE3F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3578A830218C380F0019FE3F /* Main.storyboard */; };
@@ -33,6 +34,21 @@
 		3578A842218C3A330019FE3F /* trans.en.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3578A840218C3A330019FE3F /* trans.en.csv */; };
 		3578A843218C3A330019FE3F /* trans.cn.csv in Resources */ = {isa = PBXBuildFile; fileRef = 3578A841218C3A330019FE3F /* trans.cn.csv */; };
 		358CBCF521A2762D00E2DE64 /* NetworkHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 358CBCF421A2762D00E2DE64 /* NetworkHandler.swift */; };
+		359D608C21AE3F8300279409 /* InteractiveTransition.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D607721AE3F8300279409 /* InteractiveTransition.swift */; };
+		359D608D21AE3F8300279409 /* PresentationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D607821AE3F8300279409 /* PresentationController.swift */; };
+		359D609021AE3F8300279409 /* UIView+Animations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D607B21AE3F8300279409 /* UIView+Animations.swift */; };
+		359D609121AE3F8300279409 /* PopupDialogDefaultView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D607C21AE3F8300279409 /* PopupDialogDefaultView.swift */; };
+		359D609321AE3F8300279409 /* PopupDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D607E21AE3F8300279409 /* PopupDialog.swift */; };
+		359D609421AE3F8300279409 /* PopupDialogOverlayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D607F21AE3F8300279409 /* PopupDialogOverlayView.swift */; };
+		359D609521AE3F8300279409 /* PopupDialogButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608021AE3F8300279409 /* PopupDialogButton.swift */; };
+		359D609621AE3F8300279409 /* UIViewController+Visibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608121AE3F8300279409 /* UIViewController+Visibility.swift */; };
+		359D609721AE3F8300279409 /* TransitionAnimator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608221AE3F8300279409 /* TransitionAnimator.swift */; };
+		359D609821AE3F8300279409 /* PopupDialog+Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608321AE3F8300279409 /* PopupDialog+Keyboard.swift */; };
+		359D609921AE3F8300279409 /* PopupDialogDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608421AE3F8300279409 /* PopupDialogDefaultViewController.swift */; };
+		359D609A21AE3F8300279409 /* TransitionAnimations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608621AE3F8300279409 /* TransitionAnimations.swift */; };
+		359D609C21AE3F8300279409 /* PopupDialogDefaultButtons.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608821AE3F8300279409 /* PopupDialogDefaultButtons.swift */; };
+		359D609D21AE3F8300279409 /* PresentationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608921AE3F8300279409 /* PresentationManager.swift */; };
+		359D609E21AE3F8300279409 /* PopupDialogContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359D608B21AE3F8300279409 /* PopupDialogContainerView.swift */; };
 		35A86FE8AFDEFF25DB8A09C2 /* Pods_CSVDemo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5810CF1FA074DBFC15322830 /* Pods_CSVDemo.framework */; };
 /* End PBXBuildFile section */
 
@@ -55,6 +71,7 @@
 		3553929321A4F5D500737486 /* LyeCustomGestureRecognizer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyeCustomGestureRecognizer.swift; sourceTree = "<group>"; };
 		3553929521A4F67200737486 /* LyeExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LyeExtension.swift; sourceTree = "<group>"; };
 		3553929721A5286F00737486 /* YSHClassifyCollectionViewLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = YSHClassifyCollectionViewLayout.swift; sourceTree = "<group>"; };
+		3578395421BE085200C8BF07 /* AMap_adcode_citycode.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = AMap_adcode_citycode.csv; sourceTree = "<group>"; };
 		3578A829218C380F0019FE3F /* CSVDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CSVDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3578A82C218C380F0019FE3F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3578A82E218C380F0019FE3F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -66,6 +83,21 @@
 		3578A840218C3A330019FE3F /* trans.en.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trans.en.csv; sourceTree = "<group>"; };
 		3578A841218C3A330019FE3F /* trans.cn.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = trans.cn.csv; sourceTree = "<group>"; };
 		358CBCF421A2762D00E2DE64 /* NetworkHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkHandler.swift; sourceTree = "<group>"; };
+		359D607721AE3F8300279409 /* InteractiveTransition.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractiveTransition.swift; sourceTree = "<group>"; };
+		359D607821AE3F8300279409 /* PresentationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationController.swift; sourceTree = "<group>"; };
+		359D607B21AE3F8300279409 /* UIView+Animations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Animations.swift"; sourceTree = "<group>"; };
+		359D607C21AE3F8300279409 /* PopupDialogDefaultView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogDefaultView.swift; sourceTree = "<group>"; };
+		359D607E21AE3F8300279409 /* PopupDialog.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialog.swift; sourceTree = "<group>"; };
+		359D607F21AE3F8300279409 /* PopupDialogOverlayView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogOverlayView.swift; sourceTree = "<group>"; };
+		359D608021AE3F8300279409 /* PopupDialogButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogButton.swift; sourceTree = "<group>"; };
+		359D608121AE3F8300279409 /* UIViewController+Visibility.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Visibility.swift"; sourceTree = "<group>"; };
+		359D608221AE3F8300279409 /* TransitionAnimator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimator.swift; sourceTree = "<group>"; };
+		359D608321AE3F8300279409 /* PopupDialog+Keyboard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "PopupDialog+Keyboard.swift"; sourceTree = "<group>"; };
+		359D608421AE3F8300279409 /* PopupDialogDefaultViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogDefaultViewController.swift; sourceTree = "<group>"; };
+		359D608621AE3F8300279409 /* TransitionAnimations.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TransitionAnimations.swift; sourceTree = "<group>"; };
+		359D608821AE3F8300279409 /* PopupDialogDefaultButtons.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogDefaultButtons.swift; sourceTree = "<group>"; };
+		359D608921AE3F8300279409 /* PresentationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresentationManager.swift; sourceTree = "<group>"; };
+		359D608B21AE3F8300279409 /* PopupDialogContainerView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PopupDialogContainerView.swift; sourceTree = "<group>"; };
 		4AE26D2F1F5A56C09EAD0BDB /* Pods-CSVDemo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVDemo.debug.xcconfig"; path = "Target Support Files/Pods-CSVDemo/Pods-CSVDemo.debug.xcconfig"; sourceTree = "<group>"; };
 		5810CF1FA074DBFC15322830 /* Pods_CSVDemo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CSVDemo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4B0E6E14059E4BA2A007C34 /* Pods-CSVDemo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CSVDemo.release.xcconfig"; path = "Target Support Files/Pods-CSVDemo/Pods-CSVDemo.release.xcconfig"; sourceTree = "<group>"; };
@@ -144,10 +176,12 @@
 		3578A82B218C380F0019FE3F /* CSVDemo */ = {
 			isa = PBXGroup;
 			children = (
+				359D607621AE3F8300279409 /* popup */,
 				3553928621A4ED9100737486 /* class */,
 				354AC48F21990E5700CBC255 /* evt_ex_codes.json */,
 				3578A841218C3A330019FE3F /* trans.cn.csv */,
 				3578A840218C3A330019FE3F /* trans.en.csv */,
+				3578395421BE085200C8BF07 /* AMap_adcode_citycode.csv */,
 				3578A82C218C380F0019FE3F /* AppDelegate.swift */,
 				3578A82E218C380F0019FE3F /* ViewController.swift */,
 				3553928421A3A12900737486 /* TableViewController.swift */,
@@ -158,6 +192,28 @@
 				358CBCF421A2762D00E2DE64 /* NetworkHandler.swift */,
 			);
 			path = CSVDemo;
+			sourceTree = "<group>";
+		};
+		359D607621AE3F8300279409 /* popup */ = {
+			isa = PBXGroup;
+			children = (
+				359D607721AE3F8300279409 /* InteractiveTransition.swift */,
+				359D607821AE3F8300279409 /* PresentationController.swift */,
+				359D607B21AE3F8300279409 /* UIView+Animations.swift */,
+				359D607C21AE3F8300279409 /* PopupDialogDefaultView.swift */,
+				359D607E21AE3F8300279409 /* PopupDialog.swift */,
+				359D607F21AE3F8300279409 /* PopupDialogOverlayView.swift */,
+				359D608021AE3F8300279409 /* PopupDialogButton.swift */,
+				359D608121AE3F8300279409 /* UIViewController+Visibility.swift */,
+				359D608221AE3F8300279409 /* TransitionAnimator.swift */,
+				359D608321AE3F8300279409 /* PopupDialog+Keyboard.swift */,
+				359D608421AE3F8300279409 /* PopupDialogDefaultViewController.swift */,
+				359D608621AE3F8300279409 /* TransitionAnimations.swift */,
+				359D608821AE3F8300279409 /* PopupDialogDefaultButtons.swift */,
+				359D608921AE3F8300279409 /* PresentationManager.swift */,
+				359D608B21AE3F8300279409 /* PopupDialogContainerView.swift */,
+			);
+			path = popup;
 			sourceTree = "<group>";
 		};
 		74117E20ED04F6B82FCD85E4 /* Pods */ = {
@@ -232,6 +288,7 @@
 				3578A837218C38130019FE3F /* LaunchScreen.storyboard in Resources */,
 				3578A834218C38130019FE3F /* Assets.xcassets in Resources */,
 				3553928C21A4EE0600737486 /* PhotoBrowerViewController.xib in Resources */,
+				3578395521BE085300C8BF07 /* AMap_adcode_citycode.csv in Resources */,
 				3578A832218C380F0019FE3F /* Main.storyboard in Resources */,
 				354AC49021990E5700CBC255 /* evt_ex_codes.json in Resources */,
 				3578A842218C3A330019FE3F /* trans.en.csv in Resources */,
@@ -301,20 +358,35 @@
 			files = (
 				354A5C2B21ABBF9E00A0F626 /* LueRefreshNormalFooterView.swift in Sources */,
 				354A5BBE21A6A9E700A0F626 /* LueRefreshBaseView.swift in Sources */,
+				359D608D21AE3F8300279409 /* PresentationController.swift in Sources */,
 				3578A82F218C380F0019FE3F /* ViewController.swift in Sources */,
+				359D609721AE3F8300279409 /* TransitionAnimator.swift in Sources */,
 				354A5BC021A6AB4900A0F626 /* LueRefreshHeaderView.swift in Sources */,
+				359D609D21AE3F8300279409 /* PresentationManager.swift in Sources */,
 				354A5C2D21ABF58F00A0F626 /* LuePopView.swift in Sources */,
 				354A5C2921ABA22700A0F626 /* LueRefreshFooterView.swift in Sources */,
+				359D609321AE3F8300279409 /* PopupDialog.swift in Sources */,
 				3578A82D218C380F0019FE3F /* AppDelegate.swift in Sources */,
+				359D608C21AE3F8300279409 /* InteractiveTransition.swift in Sources */,
 				354A5BC221A6AD3B00A0F626 /* LueRefreshNormalHeader.swift in Sources */,
+				359D609C21AE3F8300279409 /* PopupDialogDefaultButtons.swift in Sources */,
+				359D609121AE3F8300279409 /* PopupDialogDefaultView.swift in Sources */,
+				359D609621AE3F8300279409 /* UIViewController+Visibility.swift in Sources */,
+				359D609921AE3F8300279409 /* PopupDialogDefaultViewController.swift in Sources */,
+				359D609A21AE3F8300279409 /* TransitionAnimations.swift in Sources */,
 				3553929221A4F39F00737486 /* QRGenerator.swift in Sources */,
 				3578A83F218C395C0019FE3F /* CSV.swift in Sources */,
+				359D609421AE3F8300279409 /* PopupDialogOverlayView.swift in Sources */,
 				3553929621A4F67200737486 /* LyeExtension.swift in Sources */,
 				3553928E21A4EE1100737486 /* LueProgressHUD.swift in Sources */,
+				359D609821AE3F8300279409 /* PopupDialog+Keyboard.swift in Sources */,
+				359D609521AE3F8300279409 /* PopupDialogButton.swift in Sources */,
 				354A5BEA21A7AA1200A0F626 /* ETBottomActionController.swift in Sources */,
+				359D609021AE3F8300279409 /* UIView+Animations.swift in Sources */,
 				3553928B21A4EE0600737486 /* PhotoBrowerViewController.swift in Sources */,
 				3553928821A4EDD100737486 /* Extension.swift in Sources */,
 				3553928521A3A12900737486 /* TableViewController.swift in Sources */,
+				359D609E21AE3F8300279409 /* PopupDialogContainerView.swift in Sources */,
 				3553929021A4F13D00737486 /* LueQRCodeConstroller.swift in Sources */,
 				358CBCF521A2762D00E2DE64 /* NetworkHandler.swift in Sources */,
 				3553929421A4F5D500737486 /* LyeCustomGestureRecognizer.swift in Sources */,

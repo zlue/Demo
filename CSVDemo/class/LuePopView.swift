@@ -13,6 +13,7 @@ class LuePopView: UIView, UITableViewDataSource, UITableViewDelegate, UIGestureR
     private var textsArr: [String]!
     private var block: ((String, Int) -> Void)?
     
+    private var contentView: UIView!
     private var tableView: UITableView!
     private var dependRect: CGRect!
     
@@ -23,7 +24,7 @@ class LuePopView: UIView, UITableViewDataSource, UITableViewDelegate, UIGestureR
     
     private let arrowH: CGFloat = 10
     private let margin: CGFloat = 6
-    private let bgColor: UIColor = UIColor.gray
+    private let bgColor: UIColor = UIColor.white
     
     enum BarItemLocation {
         case left
@@ -83,19 +84,26 @@ class LuePopView: UIView, UITableViewDataSource, UITableViewDelegate, UIGestureR
             frame = CGRect(x: originFrame.minX, y: originFrame.minY, width: size.width, height: 0)
         }
         
-        tableView = UITableView(frame: frame, style: .plain)
+        contentView = UIView(frame: frame)
+        tableView = UITableView(frame: CGRect.zero, style: .plain)
         tableView.separatorInset = UIEdgeInsets(top: 0, left: 6, bottom: 0, right: 6)
         tableView.sectionIndexColor = UIColor(hex: "f5")
-        tableView.backgroundColor = UIColor.white
         tableView.delegate = self
         tableView.dataSource = self
-        tableView.layer.cornerRadius = 6
-        tableView.layer.borderColor = UIColor(hex: "f5").cgColor
-        tableView.layer.borderWidth = 1
-        tableView.backgroundColor = bgColor
+        tableView.backgroundColor = UIColor.clear
         tableView.rowHeight = 40
         tableView.isScrollEnabled = size.height < CGFloat(40*list.count)
-        addSubview(tableView)
+        addSubview(contentView)
+        contentView.addSubview(tableView)
+        
+        contentView.backgroundColor = bgColor
+        contentView.layer.cornerRadius = 6
+        contentView.layer.borderColor = UIColor(hex: "f5").cgColor
+        contentView.layer.borderWidth = 1
+        contentView.layer.shadowRadius = 6
+        contentView.layer.shadowColor = UIColor.gray.cgColor
+        contentView.layer.shadowOffset = CGSize(width: 0, height: 2)
+        contentView.layer.shadowOpacity = 1
         
         if isShowArrow {
             let arrow = LueArrowView(frame: CGRect(origin: arrowOrigin, size: CGSize(width: arrowH, height: arrowH)), c: bgColor)
@@ -108,8 +116,10 @@ class LuePopView: UIView, UITableViewDataSource, UITableViewDelegate, UIGestureR
         UIView.animate(withDuration: 0.25, animations: { [weak self] in
             frame.size.height = size.height
             frame.origin.y = originFrame.minY
-            self?.tableView.frame = frame
-        })
+            self?.contentView.frame = frame
+        }) { [weak self] (_) in
+            self?.tableView.frame = self?.contentView.bounds ?? CGRect.zero
+        }
     }
     private func calculateOrigin(rect: CGRect, size: CGSize) -> CGRect {
         var x = rect.minX + (rect.width - size.width)/2
@@ -128,14 +138,15 @@ class LuePopView: UIView, UITableViewDataSource, UITableViewDelegate, UIGestureR
         dismiss()
     }
     private func dismiss() {
-        var frame = self.tableView.frame
+        var frame = self.contentView.frame
+        self.tableView.frame = CGRect.zero
         UIView.animate(withDuration: 0.25, animations: { [weak self] in
             if self?.dependRect.minY ?? 0 > frame.minY {
                 frame.origin.y = frame.maxY
             }
             frame.size.height = 0
-            self?.tableView.frame = frame
-            self?.tableView.alpha = 0.5
+            self?.contentView.frame = frame
+            self?.contentView.alpha = 0.5
         }) { [weak self] (_) in
             self?.removeFromSuperview()
         }
@@ -186,6 +197,17 @@ class LueArrowView: UIView {
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
         self.isOpaque = false
+        
+        self.layer.shadowRadius = 6
+        self.layer.shadowColor = UIColor.gray.cgColor
+        self.layer.shadowOpacity = 1
+        
+        let path = UIBezierPath()
+        path.move(to: CGPoint(x: w/2, y: 0))
+        path.addLine(to: CGPoint(x: 0, y: h))
+        path.addLine(to: CGPoint(x: w, y: h))
+
+        self.layer.shadowPath = path.cgPath
     }
     required init?(coder aDecoder: NSCoder) {
         fatalError("init(coder:) has not been implemented")
